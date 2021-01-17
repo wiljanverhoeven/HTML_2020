@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Opdrachten_H06</title>
+
+    <style>
+        header {
+            font-size: 30px;
+            margin: 10px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .deel1 {
+            color: cornflowerblue;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+        }
+        .deel2 {
+            color: cornflowerblue;
+            position: absolute;
+            top: 50px;
+            left: 350px;
+        }
+        div {
+            position: absolute;
+            top: 350px;
+            left: 350px;
+        }
+        li {
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <strong>VoorbeeldFormulier</strong>
+
+</header>
+
+<section>
+        <form action="http://www.savatarian.com/html5/form.php" method="get">
+
+            <ul class="deel1">
+
+                <li>
+
+                    <label for="voornaam">Voornaam:</label>
+                    <input type="text" name="voornaam" id="voornaam">
+
+                </li>
+
+                <li>
+
+                    <label for="tussenvoegsel">Tussenvoegsel:</label>
+                    <input type="text" name="tussenvoegsel" id="tussenvoegsel">
+
+                </li>
+
+                <li>
+
+                    <label for="achternaam">Achternaam:</label>
+                    <input type="text" name="achternaam" id="achternaam">
+
+                </li>
+
+                <li>
+
+                    <label for="geslacht">Geslacht:</label>
+                    <input type="radio" name="geslacht" value="man" id="geslacht">
+                    &nbsp;man
+                    <input type="radio" name="geslacht" value="vrouw">
+                    &nbsp;vrouw
+
+                </li>
+
+                <li>
+
+                    <label for="kleur-ogen">Kleur ogen:</label>
+                    <select name="kleur-ogen" id="kleur-ogen">
+                        <option>goen</option>
+                        <option>blauw</option>
+                        <option>bruin</option>
+
+                    </select>
+
+                </li>
+
+                <li>
+
+                    <label for="geboortedatum">Geboortedatum:</label>
+                    <input type="date" name="geboortedatum" id="geboortedatum">
+
+                </li>
+
+                <li>
+
+                    <label for="omschrijving">Omschrijving:</label>
+                    <textarea name="omschrijving" id="omschrijving"></textarea>
+
+                </li>
+
+            </ul>
+
+            <ul class="deel2">
+                <label for="lekker-eten">Lekker eten:</label>
+
+                <li><input type="checkbox" id="lekker-eten" name="lekker-eten" value="hamburger">
+                    <span class="checkbox">Hamburger</span></li>
+
+                <li><input type="checkbox" name="lekker-eten" value="sperciebonen">
+                    <span class="checkbox">Sperciebonen</span></li>
+
+                <li><input type="checkbox" name="lekker-eten" value="Aardappelen">
+                    <span class="checkbox">Aardappelen</span></li>
+
+            </ul>
+
+            <div>
+                <input type="reset" name="annuleren">
+                <input type="submit" name="submit">
+            </div>
+
+        </form>
+
+</section>
+
+</body>
+
+</html>
